@@ -6,10 +6,12 @@
  * 3. Déployez sur votre serveur et testez !
  */
 
-$from = '';
-$to = '';
-$message = 'Hello World, sending a simple mail !';
+$from = 'besson.mikael04@gmail.com';
+$to = 'martymacfly04@gmail.com';
+//$message = 'Hello World, sending a simple mail !';
 // TODO Votre code ici.
+
+//mail('besson.mikael04@gmail.com', 'Hello World', 'Hello World, sending a simple mail !' );
 
 
 /**
@@ -24,3 +26,10 @@ $message = 'Hello World, sending a simple mail !';
  *     N'écrasez pas les valeurs déjà existantes ( s'il y en a ).
  */
 // TODO Votre code ici.
+
+$message = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus erat et massa blandit bibendum.
+ Nullam quis ornare mi. Vivamus hendrerit rhoncus nisi, sit amet maximus erat porttitor ac. Praesent sed eros placerat,
+  pharetra lorem ut, tempus ex. Donec quam lacus, viverra nec dolor quis, varius eleifend urna. In condimentum 
+  massa dictum blandit malesuada. Curabitur pulvinar ultrices metus, at cursus ante euismod eu.  !';
+$message = wordwrap($message, 70, "\r\n");
+mail('besson.mikael04@gmail.com', 'Hello World2', $message );
